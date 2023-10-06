@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txvEsqueciSenha"
+        android:layout_width="74dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txt_esqueciasenha"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:drawableStart="@drawable/ic_btn_google_light"
+        android:text="@string/txt_google"
+        android:textAllCaps="false"
+        app:backgroundTint="#4DFFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btnFacebook"
+        app:layout_constraintStart_toStartOf="@+id/edtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+
+    <Button
+        android:id="@+id/btnFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/facebook"
+        android:text="@string/txt_facebook"
+        android:textAllCaps="false"
+        app:backgroundTint="#4DFFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/edtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/estilo_botao_entrar"
+        android:text="@string/txt_entrar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="#80FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/edtSenha"
+        app:layout_constraintStart_toStartOf="@+id/edtSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
+
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/esstilo_input"
+        android:drawableStart="@drawable/ic_senha"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/txt_senha"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edtLogin"
+        app:layout_constraintStart_toStartOf="@+id/edtLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtLogin"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/edtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/esstilo_input"
+        android:drawableStart="@drawable/ic_login"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/txt_login"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvBemVindo"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/txvBemVindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/txt_bem_vindo"
+        android:textColor="#DFF3EFEF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

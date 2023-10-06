@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AppCadastroLogin</string>
+    <string name="txtsalvar">Salvar</string>
+    <string name="txt_f">F</string>
+    <string name="txt_m">M</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_cadastro">Cadastro</string>
+    <string name="txt_curso_de_interesse">Curso de Interesse:</string>
+    <string name="txt_sexo">Sexo:</string>
+    <string name="esqueci_a_senha">Esqueci a Senha</string>
+    <string name="txt_esqueci_a_senha" />
+    <string name="txt_outro">Outro</string>
+    <string name="txt_musica">Musica</string>
+    <string name="txt_ingles">Inglês</string>
+    <string name="txt_teatro">Teatro</string>
+    <string name="txt_moda">Moda</string>
+    <string name="txt_data_de_nascimento">Data de Nascimento</string>
+    <string name="txt_facebook">Facebook</string>
+    <string name="txt_entrar">Entrar</string>
+    <string name="txt_senha">Senha</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_bem_vindo">Bem Vindo</string>
+    <string name="txt_google">Google</string>
+    <string name="txt_esqueciasenha">Esqueci a Senha</string>
+</resources>

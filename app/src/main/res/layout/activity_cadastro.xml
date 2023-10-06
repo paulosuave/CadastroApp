@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".CadastroActivity">
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/estilo_botao_entrar"
+        android:text="@string/txtsalvar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="#33E6DFDF"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataNascimento"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/radioSexo" />
+
+    <TextView
+        android:id="@+id/txvCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/txt_cadastro"
+        android:textColor="#DFFFFCFC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txvSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/txt_sexo"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioSexo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimento" />
+
+    <TextView
+        android:id="@+id/txvCursoInteresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/txt_curso_de_interesse"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/radioSexo" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/esstilo_input"
+        android:drawableStart="@drawable/ic_login"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/txt_nome"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvCadastro" />
+
+    <RadioGroup
+        android:id="@+id/radioSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataNascimento"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimento">
+
+        <RadioButton
+            android:id="@+id/rbnMaculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="@string/txt_m"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:useMaterialThemeColors="false" />
+
+        <RadioButton
+            android:id="@+id/rbnFeminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="@string/txt_f"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbnOutro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="@string/txt_outro"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="180dp"
+        android:buttonTint="@color/white"
+        android:text="@string/txt_musica"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimento" />
+
+    <CheckBox
+        android:id="@+id/chkIngles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="180dp"
+        android:buttonTint="@color/white"
+        android:text="@string/txt_ingles"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataNascimento"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chkMusica"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimento" />
+
+    <CheckBox
+        android:id="@+id/chkTeatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="44dp"
+        android:buttonTint="@color/white"
+        android:text="@string/txt_teatro"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/chkModa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/chkMusica"
+        app:layout_constraintTop_toBottomOf="@+id/chkMusica" />
+
+    <CheckBox
+        android:id="@+id/chkModa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/white"
+        android:text="@string/txt_moda"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/chkIngles"
+        app:layout_constraintTop_toBottomOf="@+id/chkIngles" />
+
+    <EditText
+        android:id="@+id/edtDataNascimento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/esstilo_input"
+        android:drawableStart="@android:drawable/ic_dialog_dialer"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/txt_data_de_nascimento"
+        android:inputType="date"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome"
+        android:importantForAutofill="no" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
